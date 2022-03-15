@@ -4,7 +4,8 @@
 <h2>Liste des articles</h2>
 <table border="1">
     <tr>
-        <th>NOM</th><th>PRIX</th>
+        <th>NOM</th>
+        <th>PRIX</th>
     </tr>
     <c:forEach var="article" items="${listarticles}">
         <tr>

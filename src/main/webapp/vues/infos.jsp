@@ -21,7 +21,7 @@
 <table>
     <tr>
         <td><input type="submit" value="Acheter"></td>
-        <td>Qte <input class="form-control type="text" name="qte" size="3" value="<c:out value="${qte}"/>"></td>
+        <td>Qte <input class="form-control" type="text" name="qte" size="3" value="<c:out value="${qte}"/>"></td>
         <td><c:out value="${msg}"/></td>
     </tr>
 </table>

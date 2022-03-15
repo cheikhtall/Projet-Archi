@@ -1,4 +1,4 @@
-package com.example.examenmulti;
+package com.example.projettiers;
 
 import java.io.*;
 import javax.servlet.http.*;
