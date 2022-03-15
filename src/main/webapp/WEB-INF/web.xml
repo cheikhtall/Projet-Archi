@@ -11,6 +11,11 @@
             <param-value>spring-config-firebird.xml</param-value>
         </init-param>
         <init-param>
+            <param-name>strutsConfigFileName</param-name>
+            <param-value>struts-config.xml</param-value>
+        </init-param>
+
+        <init-param>
             <param-name>urlMain</param-name>
             <param-value>/main</param-value>
         </init-param>
@@ -39,14 +44,15 @@
             <param-value>/vues/debug.jsp</param-value>
         </init-param>
     </servlet>
-    <welcome-file-list>
-        <welcome-file>/vues/index.jsp</welcome-file>
-    </welcome-file-list>
+
     <servlet-mapping>
         <servlet-name>webarticles</servlet-name>
-        <url-pattern>/main</url-pattern>
+        <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
 
+    <welcome-file-list>
+        <welcome-file>/vues/index.jsp</welcome-file>
+    </welcome-file-list>
 
 </web-app>
