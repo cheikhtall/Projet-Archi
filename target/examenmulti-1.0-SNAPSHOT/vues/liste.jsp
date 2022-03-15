@@ -11,7 +11,7 @@
         <tr>
             <td><c:out value="${article.nom}"/></td>
             <td><c:out value="${article.prix}"/></td>
-            <td><a href="<c:out value="infos.do?id=${article.id}"/>">Infos</a></td>
+            <td><a class="btn btn-success" href="<c:out value="infos.do?id=${article.id}"/>">Infos</a></td>
         </tr>
     </c:forEach>
 </table>

@@ -13,7 +13,7 @@
         <td><h2>Magasin virtuel</h2></td>
         <c:forEach items="${actions}" var="action">
             <td>|</td>
-            <td><a href="<c:out value="${action.href}"/>"><c:out value="${action.lien}"/></a></td>
+            <td><a class="btn btn-success" href="<c:out value="${action.href}"/>"><c:out value="${action.lien}"/></a></td>
         </c:forEach>
     </tr>
 </table>

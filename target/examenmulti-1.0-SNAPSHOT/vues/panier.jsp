@@ -20,6 +20,6 @@
     </c:forEach>
 </table>
 <p>
-    Total de la commande : <c:out value="${panier.total}"/> euros
+    Total de la commande : <c:out value="${panier.total}"/> euros</p>
     </body>
     </html>

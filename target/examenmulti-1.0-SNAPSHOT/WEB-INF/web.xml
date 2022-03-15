@@ -11,8 +11,8 @@
             <param-value>spring-config-firebird.xml</param-value>
         </init-param>
         <init-param>
-            <param-name>strutsConfigFileName</param-name>
-            <param-value>struts-config.xml</param-value>
+            <param-name>config</param-name>
+            <param-value>/WEB-INF/struts-config.xml</param-value>
         </init-param>
 
         <init-param>
