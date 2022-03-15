@@ -2,9 +2,12 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:include page="entete.jsp"/>
 <h2>Article d'id [<c:out value="${article.id}"/>]</h2>
-<table border="1">
+<table table table-bordered>
     <tr>
-        <th>NOM</th><th>PRIX</th><th>STOCK ACTUEL</th><th>STOCK MINIMUM</th>
+        <th>NOM</th>
+        <th>PRIX</th>
+        <th>STOCK ACTUEL</th>
+        <th>STOCK MINIMUM</th>
     </tr>
     <tr>
         <td><c:out value="${article.nom}"/></td>
@@ -18,7 +21,7 @@
 <table>
     <tr>
         <td><input type="submit" value="Acheter"></td>
-        <td>Qte <input type="text" name="qte" size="3" value="<c:out value="${qte}"/>"></td>
+        <td>Qte <input class="form-control type="text" name="qte" size="3" value="<c:out value="${qte}"/>"></td>
         <td><c:out value="${msg}"/></td>
     </tr>
 </table>
