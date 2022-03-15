@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:include page="entete.jsp"/>
 <h2>Liste des articles</h2>
-<table border="1">
+<table class="table table-bordered">
     <tr>
         <th>NOM</th>
         <th>PRIX</th>
@@ -16,6 +16,6 @@
     </c:forEach>
 </table>
 <p>
-    <c:out value="${message}"/>
+    <c:out value="${message}"/></p>
     </body>
     </html>
