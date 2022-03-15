@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:include page="entete.jsp"/>
 <h2>Contenu de votre panier</h2>
-<table class="table">
+<table class="table table-striped">
     <tr>
         <th scope="col">Article</th>
         <th scope="col">Qte</th>
@@ -15,7 +15,7 @@
             <td><c:out value="${achat.qte}"/></td>
             <td><c:out value="${achat.article.prix}"/></td>
             <td><c:out value="${achat.total}"/></td>
-            <td><a href="<c:out value="?action=retirerachat&id=${achat.article.id}"/>">Retirer</a></td>
+            <td><a class="btn btn-primary" href="<c:out value="?action=retirerachat&id=${achat.article.id}"/>">Retirer</a></td>
         </tr>
     </c:forEach>
 </table>
