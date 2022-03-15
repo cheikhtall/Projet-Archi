@@ -3,9 +3,11 @@
 <html>
 <head>
     <title>webarticles</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
 </head>
 <body>
-<table>
+<table class="table">
     <tr>
         <td><h2>Magasin virtuel</h2></td>
         <c:forEach items="${actions}" var="action">

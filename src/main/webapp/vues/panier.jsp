@@ -2,9 +2,12 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:include page="entete.jsp"/>
 <h2>Contenu de votre panier</h2>
-<table border="1">
+<table class="table">
     <tr>
-        <td>Article</td><td>Qte</td><td>Pu</td><td>Total</td>
+        <th scope="col">Article</th>
+        <th scope="col">Qte</th>
+        <th scope="col">Pu</th>
+        <th scope="row">Total</th>
     </tr>
     <c:forEach var="achat" items="${panier.achats}">
         <tr>
